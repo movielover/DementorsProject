@@ -1,0 +1,42 @@
+html, body {
+	margin: 0; padding: 0;}
+
+/* ^3 ------------- home page specfic layout styles ----------- */
+#wrapper {
+	background: url(../images/BlueOcean.jpg);
+}
+#mainHeader {
+  background: black;
+  height: 60px;
+  width: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: inline-block;
+  overflow: hidden;
+}
+
+#siteNav {
+  text-align: left;
+  list-style: none;
+  padding-left: 0px;
+}
+
+#siteNav h1 {
+  color: #fff;
+  margin-left: 10px;
+  margin-right: 10px;
+  float: left;
+  display: inline-block;
+}
+
+#siteNav ul {
+  display: inline-block;
+}
+
+#siteNav li {
+  display: inline-block;
+  padding: 20px;
+  text-align: center;
+}
