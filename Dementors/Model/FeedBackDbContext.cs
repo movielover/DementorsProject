@@ -14,7 +14,8 @@ namespace Dementors.Model
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer();
+            optionsBuilder.UseSqlServer(@"Server=den1.mssql2.gear.host; Database=dementor;User Id=dementor;
+            Password = Jr5ZlkG-8ti-;");
         }
     }
 }
