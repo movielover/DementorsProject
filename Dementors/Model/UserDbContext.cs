@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace Dementors.Model
 {
-    public class FeedBackDbContext: DbContext
+    public class UserDbContext : DbContext
     {
-        public DbSet<Feedback> UserId { get; set; }
-        public DbSet<Feedback> Text { get; set; }
-        public DbSet<Feedback> TimeDate { get; set; }
+        public DbSet<User> UserId { get; set; }
+        public DbSet<User> Name { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
