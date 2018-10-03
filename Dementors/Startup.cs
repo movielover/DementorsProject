@@ -24,7 +24,7 @@ namespace Dementors
 		{
 			services.AddDbContext<DatabaseContext>(options =>
 			{
-				var connectionString = configuration.GetConnectionString("DbContext");
+				var connectionString = configuration.GetConnectionString("DatabaseContext");
 				options.UseSqlServer(connectionString);
 
 			});

@@ -5,6 +5,13 @@ namespace Dementors.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly DatabaseContext _db;
+
+        public HomeController(DatabaseContext db)
+        {
+            this._db = db;
+        }
+        
         [Route("")]
         public IActionResult Index()
         {
@@ -12,14 +19,16 @@ namespace Dementors.Controllers
         }
 
         [Route("CreateTrainingSession")]
-        public IActionResult CreateWorkoutSeance(WorkoutSeance
-            workoutSeance)
+        public IActionResult CreateWorkoutSeance(WorkoutSeance workoutSeance)
         {
-            if (!ModelState.IsValid)
-            {
+            if(!ModelState.IsValid)
                 return View();
-            }
-            
+
+            _db.WorkoutSeance.Add(workoutSeance);
+            _db.SaveChanges();
+
+            return View();
+
         }
     }
 }

@@ -11,7 +11,7 @@ namespace Dementors.Model
         public DbSet<WorkoutSeance> WorkoutSeance { get; set; }
 
 
-        public DatabaseContext(DbContextOptions options) 
+        public DatabaseContext(DbContextOptions<DatabaseContext> options) 
             : base(options)
         {
             Database.EnsureCreated();
