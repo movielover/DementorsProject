@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
+
 namespace Dementors.Model
 {
     public class DbContext: Microsoft.EntityFrameworkCore.DbContext
@@ -12,7 +13,7 @@ namespace Dementors.Model
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Connectionstring");
+            optionsBuilder.UseSqlServer(Connectionstring);
         }
     }
 }
