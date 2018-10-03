@@ -1,0 +1,34 @@
+@model Dementors.Model.WorkoutSeance
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>title</h2>
+
+<fieldset>
+    
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary()
+        
+        <p>
+            @Html.LabelFor(x => x.TimeDateForWorkout)
+            @Html.EditorFor(x => x.TimeDateForWorkout)
+            @Html.ValidationMessageFor(x => x.TimeDateForWorkout)
+        </p>
+        <p>
+            @Html.LabelFor(x => x.WorkoutType)
+            @Html.EditorFor(x => x.WorkoutType)
+            @Html.ValidationMessageFor(x => x.WorkoutType)
+        </p>
+        <p>
+            @Html.LabelFor(x => x.TimeSpent)
+            @Html.EditorFor(x => x.TimeSpent)
+            @Html.ValidationMessageFor(x => x.TimeSpent)
+        </p>
+        <p>
+            <button type="submit">Create Workout Seance</button>
+        </p>
+    }
+</fieldset>
