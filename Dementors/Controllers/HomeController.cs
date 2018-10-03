@@ -18,7 +18,7 @@ namespace Dementors.Controllers
             return View();
         }
 
-        [Route("CreateTrainingSession")]
+        [Route("CreateWorkoutSeance")]
         public IActionResult CreateWorkoutSeance(WorkoutSeance workoutSeance)
         {
             if(!ModelState.IsValid)
