@@ -14,9 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Update="Views\Loggedin\Tour.cshtml">
-      <Pack>$(IncludeRazorContentInPack)</Pack>
-    </Content>
+    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>
