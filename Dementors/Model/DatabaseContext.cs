@@ -2,7 +2,7 @@
 
 namespace Dementors.Models
 {
-    public class DatabaseContext: Microsoft.EntityFrameworkCore.DbContext
+    public class DatabaseContext : DbContext
     {
         public DbSet<Feedback> Feedback { get; set; }
         public DbSet<Information> Information { get; set; }
@@ -10,6 +10,11 @@ namespace Dementors.Models
         public DbSet<User> User { get; set; }
         public DbSet<WorkoutSeance> WorkoutSeance { get; set; }
 
-        
+
+        public DatabaseContext(DbContextOptions<DatabaseContext> options) 
+            : base(options)
+        {
+            Database.EnsureCreated();
+        }
     }
 }

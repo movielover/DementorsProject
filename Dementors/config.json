@@ -1,6 +1,6 @@
 {
-  "ConnectionStrings": {
-    "DatabaseContext": "Server=(localdb)\\MSSQLLocalDB; Database=Dementors;Trusted_Connection=True;"
+  "Connectionstrings": {
+    "DatabaseContext": "Server=(localdb)\\mssqllocaldb;Database=Dementors;Trusted_Connection=True;"
   },
   "FeatureToggles": {
     "EnableDeveloperExceptions": true
