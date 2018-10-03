@@ -2,7 +2,7 @@
 
 namespace Dementors.Model
 {
-    public class DatabaseContext: Microsoft.EntityFrameworkCore.DbContext
+    public class DatabaseContext : DbContext
     {
         public DbSet<Feedback> Feedback { get; set; }
         public DbSet<Information> Information { get; set; }
@@ -10,9 +10,11 @@ namespace Dementors.Model
         public DbSet<User> User { get; set; }
         public DbSet<WorkoutSeance> WorkoutSeance { get; set; }
 
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB; Database=master;" + "Trusted_Connection=True;");
-        //}
+
+        public DatabaseContext(DbContextOptions options) 
+            : base(options)
+        {
+            Database.EnsureCreated();
+        }
     }
 }

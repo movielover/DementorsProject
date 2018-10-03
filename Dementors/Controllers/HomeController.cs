@@ -20,7 +20,6 @@ namespace Dementors.Controllers
                 return View();
             }
             
-            _db.
         }
     }
 }
