@@ -1,6 +1,9 @@
 {
-  "Connectionstring": {
+  "connectionString": {
     "DbContext": "Server=(localdb)\\MSSQLLocalDB; Database=master;Trusted_Connection=True;"
+  },
+  "FeatureToggles":{
+    "EnableDeveloperExceptions": true
   }
 }
 
