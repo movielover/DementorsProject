@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Dementors.Models
+namespace Dementors.Model
 {
     public class DatabaseContext : DbContext
     {

@@ -1,4 +1,4 @@
-using Dementors.Models;
+using Dementors.Model;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Dementors.Controllers
