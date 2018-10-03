@@ -17,4 +17,16 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\WorkoutSeance\CreateWorkoutSeance.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\WorkoutSeance\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\WorkoutSeancecontroller\CreateWorkoutSeance.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\WorkoutSeancecontroller\Index.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\WorkoutSeance\CreateWorkoutSeance.cshtml" />
+    <UpToDateCheckInput Remove="Pages\WorkoutSeance\Index.cshtml" />
+  </ItemGroup>
+
 </Project>

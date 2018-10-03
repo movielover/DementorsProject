@@ -3,15 +3,22 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Dementors.Controllers
 {
-    public class HomeController : Controller
-    {   
-        [Route("")]
+    public class WorkoutSeanceController : Controller
+    {
+        private readonly DatabaseContext _db;
+
+        public WorkoutSeanceController(DatabaseContext db)
+        {
+            _db = db;
+        }
+
+        // GET
         public IActionResult Index()
         {
             return View();
         }
-
-        [Route("CreateTrainingSession")]
+        
+        [Route("CreateWorkoutSeance")]
         public IActionResult CreateWorkoutSeance(WorkoutSeance workoutSeance)
         {
             if(!ModelState.IsValid)
@@ -21,6 +28,7 @@ namespace Dementors.Controllers
             _db.SaveChanges();
 
             return View();
+
         }
     }
 }
