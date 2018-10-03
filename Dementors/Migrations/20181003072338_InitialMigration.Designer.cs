@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Dementors.Migrations
 {
-    [DbContext(typeof(Model.DbContext))]
+    [DbContext(typeof(Model.DatabaseContext))]
     [Migration("20181003072338_InitialMigration")]
     partial class InitialMigration
     {

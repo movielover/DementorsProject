@@ -2,7 +2,7 @@
 
 namespace Dementors.Model
 {
-    public class DbContext: Microsoft.EntityFrameworkCore.DbContext
+    public class DatabaseContext: Microsoft.EntityFrameworkCore.DbContext
     {
         public DbSet<Feedback> Feedback { get; set; }
         public DbSet<Information> Information { get; set; }
