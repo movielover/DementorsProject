@@ -5,22 +5,9 @@ namespace Dementors.Controllers
 {
     public class HomeController : Controller
     {   
-        [Route("")]
+        
         public IActionResult Index()
         {
-            return View();
-        }
-
-
-        [Route("CreateWorkoutSeance")]
-        public IActionResult CreateWorkoutSeance(WorkoutSeance workoutSeance)
-        {
-            if(!ModelState.IsValid)
-                return View();
-
-            _db.WorkoutSeance.Add(workoutSeance);
-            _db.SaveChanges();
-
             return View();
 
         }
