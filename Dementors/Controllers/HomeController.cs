@@ -11,7 +11,8 @@ namespace Dementors.Controllers
             return View();
         }
 
-        [Route("CreateTrainingSession")]
+
+        [Route("CreateWorkoutSeance")]
         public IActionResult CreateWorkoutSeance(WorkoutSeance workoutSeance)
         {
             if(!ModelState.IsValid)
@@ -21,6 +22,7 @@ namespace Dementors.Controllers
             _db.SaveChanges();
 
             return View();
+
         }
     }
 }
