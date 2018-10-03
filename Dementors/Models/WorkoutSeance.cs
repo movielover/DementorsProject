@@ -7,6 +7,7 @@ namespace Dementors.Model
 {
     public class WorkoutSeance
     {
+        public int Id { get; set; }
         public int TimeSpent { get; set; }
         public DateTime TimeDateForWorkout { get; set; }
         public string WorkoutType { get; set; }
