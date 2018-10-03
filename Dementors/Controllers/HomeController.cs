@@ -11,15 +11,15 @@ namespace Dementors.Controllers
             return View();
         }
 
-        //[Route("CreateTrainingSession")]
-        //public IActionResult CreateWorkoutSeance(WorkoutSeance
-        //    workoutSeance)
-        //{
-        //    if (!ModelState.IsValid)
-        //    {
-        //        return View();
-        //    }
+        [Route("CreateTrainingSession")]
+        public IActionResult CreateWorkoutSeance(WorkoutSeance
+            workoutSeance)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
 
-        //    _db.
+            _db.
         }
     }
