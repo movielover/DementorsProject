@@ -1,0 +1,6 @@
+{
+  "Connectionstring": {
+    "DbContext": "Server=(localdb)\\MSSQLLocalDB; Database=master;Trusted_Connection=True;"
+  }
+}
+
