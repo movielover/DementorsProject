@@ -19,11 +19,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <_ContentIncludedByDefault Remove="Views\Session\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\MyPage\Index.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
-    <UpToDateCheckInput Remove="Views\Session\Index.cshtml" />
+    <UpToDateCheckInput Remove="Views\MyPage\Index.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
