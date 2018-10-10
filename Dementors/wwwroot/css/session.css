@@ -1,17 +1,25 @@
-body, html{
-height: 100%;
-margin: 0px auto;
-padding: 0px auto;
-}
-.wrapper{
-  width: 100%;
-  margin: 0 auto;
-  background-color: red;
-  height: auto;
-  min-height: 100%;
+/*body, html{
+	height: 100%;
+	margin: 0px auto;
+	padding: 0px auto;
+}*/
+.wrappersession{
+	width: 100%;
+	 margin: 0 auto;
+	 height: auto;
+	 min-height: 100%;
 }
 #session{
-  width: 300px;
-  height: 150px;
-  background-color: black;
+	width: 350px;
+	height: 200px;
+	background-color: white;
+	margin-top: 250px;
+	margin-left: 100px;
+}
+.information {
+	width: 350px;
+	height: 200px;
+	background-color: white;
+	margin-top: 250px;
+	margin-left: 100px;
 }

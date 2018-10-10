@@ -15,22 +15,15 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <_ContentIncludedByDefault Remove="Views\WorkoutSeance\Index.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
-    <_ContentIncludedByDefault Remove="Pages\WorkoutSeance\CreateWorkoutSeance.cshtml" />
-    <_ContentIncludedByDefault Remove="Pages\WorkoutSeance\Index.cshtml" />
-    <_ContentIncludedByDefault Remove="Pages\WorkoutSeancecontroller\CreateWorkoutSeance.cshtml" />
-    <_ContentIncludedByDefault Remove="Pages\WorkoutSeancecontroller\Index.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <UpToDateCheckInput Remove="Pages\WorkoutSeance\CreateWorkoutSeance.cshtml" />
-    <UpToDateCheckInput Remove="Pages\WorkoutSeance\Index.cshtml" />
+    <UpToDateCheckInput Remove="Views\WorkoutSeance\Index.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
