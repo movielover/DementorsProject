@@ -9,11 +9,11 @@ namespace Dementors
 {
 	public class Startup
 	{
-		private readonly IConfigurationRoot configuration;
+		private readonly IConfigurationRoot _configuration;
 		
 		public Startup(IHostingEnvironment env)
 		{
-			configuration = new ConfigurationBuilder()
+			_configuration = new ConfigurationBuilder()
 				.AddEnvironmentVariables()
 				.AddJsonFile(env.ContentRootPath + "/config.json")
 				.Build();
@@ -24,7 +24,7 @@ namespace Dementors
 		{
 			services.AddDbContext<DatabaseContext>(options =>
 			{
-				var connectionString = configuration.GetConnectionString("DatabaseContext");
+				var connectionString = _configuration.GetConnectionString("DatabaseContext");
 				options.UseSqlServer(connectionString);
 
 			});
