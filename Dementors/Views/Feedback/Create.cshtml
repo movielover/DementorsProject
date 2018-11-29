@@ -1,8 +1,25 @@
-@model object
-
+@model Dementors.Model.Feedback
 @{
     ViewBag.Title = "title";
     Layout = "_Layout";
 }
 
 <h2>title</h2>
+
+<fieldset>
+    <form asp-action="create" asp-controlller="Feedback">
+         
+        <div asp-validation-summary="ModelOnly"></div>
+         
+        <p>
+            <label asp-for="UserId" class="form-control-feedback-userid-label"></label>
+            <input asp-for="UserId" class="form-control-feedback-userid-input"/>
+            <label asp-for="Text" class="form-control-feedback-text-label"></label>
+            <input asp-for="Text" class="form-control-feedback-text-input"/>
+            <span asp-validation-for="Text"></span>
+        </p>
+        <p>
+            <button type="submit">Send Feedback</button>
+        </p>
+    </form>
+</fieldset>

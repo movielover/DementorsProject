@@ -12,20 +12,19 @@ namespace Dementors.Controllers
         {
             _db = db;
         }
-        
-        [Route(" ")]
+           
         public IActionResult Index()
         {
             return View();
         }
         
-        [HttpGet, Route("Create")]
+        [HttpGet]
         public IActionResult Create()
         {
             return View();
         }
         
-        [HttpPost, Route("Create")]
+        [HttpPost]
         public IActionResult Create(Feedback feedback)
         {
 

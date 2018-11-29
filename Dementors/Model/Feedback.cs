@@ -7,7 +7,7 @@ namespace Dementors.Model
     public class Feedback
     {        
         
-        [Display(Name = "Brugernavn ")]
+        [Display(Name = "Brugernavn")]
         [Required]
         [DataType(DataType.Text)]
         public int UserId { get; set; }
