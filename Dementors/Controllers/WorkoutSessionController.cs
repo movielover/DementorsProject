@@ -3,11 +3,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Dementors.Controllers
 {
-    public class WorkoutSeanceController : Controller
+    public class WorkoutSessionController : Controller
     {
         private readonly DatabaseContext _db;
 
-        public WorkoutSeanceController(DatabaseContext db)
+        public WorkoutSessionController(DatabaseContext db)
         {
             _db = db;
         }
@@ -18,13 +18,13 @@ namespace Dementors.Controllers
             return View();
         }
         
-        [Route("CreateWorkoutSeance")]
-        public IActionResult CreateWorkoutSeance(WorkoutSeance workoutSeance)
+        [Route("SaveWorkoutSession")]
+        public IActionResult SaveWorkoutSession(WorkoutSession workoutSession)
         {
             if(!ModelState.IsValid)
                 return View();
 
-            _db.WorkoutSeance.Add(workoutSeance);
+            _db.WorkoutSession.Add(workoutSession);
             _db.SaveChanges();
 
             return View();

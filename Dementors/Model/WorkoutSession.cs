@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Dementors.Model
 {
-    public class WorkoutSeance
+    public class WorkoutSession
     {
         public int Id { get; set; }
         public int TimeSpent { get; set; }

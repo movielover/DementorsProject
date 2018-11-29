@@ -8,7 +8,7 @@ namespace Dementors.Model
         public DbSet<Information> Information { get; set; }
         public DbSet<Trainer> Trainer { get; set; }
         public DbSet<User> User { get; set; }
-        public DbSet<WorkoutSeance> WorkoutSeance { get; set; }
+        public DbSet<WorkoutSession> WorkoutSession { get; set; }
 
 
         public DatabaseContext(DbContextOptions<DatabaseContext> options) 

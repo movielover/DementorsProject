@@ -69,3 +69,7 @@ body{
 	background-color:gray;
 }
 
+.navbar {
+	position: absolute;
+}
+
