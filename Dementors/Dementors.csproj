@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <_ContentIncludedByDefault Remove="Views\MyPage\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="wwwroot\ShowSession\index.html" />
   </ItemGroup>
 
   <ItemGroup>

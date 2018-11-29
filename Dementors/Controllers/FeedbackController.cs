@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Dementors.Model;
 using Microsoft.AspNetCore.Mvc;
 
@@ -39,8 +36,8 @@ namespace Dementors.Controllers
             feedback.Id = 1;
             feedback.TimeDate = DateTime.Now;
 
-            _db.Feedback.Add(feedback);
-            _db.SaveChanges(); 
+            //_db.Feedback.Add(feedback);
+            //_db.SaveChanges(); 
             
             return View();
         }

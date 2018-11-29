@@ -1,23 +1,8 @@
-﻿@addTagHelper "*, Microsoft.AspNetCore.Mvc.TegHelpers"
-@model Dementors.Model.Feedback
+@model object
+
 @{
+    ViewBag.Title = "title";
     Layout = "_Layout";
 }
 
-<h2>index</h2>
-
-<fieldset>
-    <form asp-action="Create" asp-controlller="Feedback">
-        
-        <div asp-validation-summary="ModelOnly" class="input-validation-error"></div>
-        
-        <p>
-            <label asp-for="Text"></label>
-            <input asp-for="Text" class="form-control" placeholder="Feedback Feedback Text"/>
-            <span asp-validation-for="Text"></span>
-        </p>
-        <p>
-            <button type="submit">Send Feedback</button>
-        </p>
-    </form>
-</fieldset>
+<h2>title</h2>
