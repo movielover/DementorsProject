@@ -32,7 +32,7 @@ namespace Dementors.Controllers
                 return View();
             
 
-            workoutSession.UserId = Bruger.Id;
+            workoutSession.UserId = new Bruger().Id;
             workoutSession.WorkoutType = "DemensTræning";
             workoutSession.TimeDateForWorkout = DateTime.Now;
 
