@@ -1,3 +1,4 @@
+using System;
 using Dementors.Model;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,17 +19,29 @@ namespace Dementors.Controllers
             return View();
         }
         
-        [Route("SaveWorkoutSession")]
-        public IActionResult SaveWorkoutSession(WorkoutSession workoutSession)
+        [HttpGet]
+        public IActionResult Save()
         {
-            if(!ModelState.IsValid)
+            return View();
+        }
+        
+        [HttpPost]
+        public IActionResult Save(WorkoutSession workoutSession)
+        {
+            if (!ModelState.IsValid)
                 return View();
+            
+
+            workoutSession.UserId = Bruger.Id;
+            workoutSession.TimeSpent = 500;
+            workoutSession.WorkoutType = "DemensTræning";
+            workoutSession.TimeDateForWorkout = DateTime.Now;
+
 
             _db.WorkoutSession.Add(workoutSession);
-            _db.SaveChanges();
-
+            _db.SaveChanges(); 
+            
             return View();
-
         }
     }
 }
