@@ -75,11 +75,7 @@ body{
     top: 0;
 }
 
-#wrapper-createform{
-    margin: 30px auto 0;
-}
-
-.form-control{
+.form-control-feedback{
     width: 300px;
     height: auto;
     float: left;
@@ -113,3 +109,41 @@ body{
 .feedback-button-submit {
     
 }
+
+.form-control-workout{
+    width: 300px;
+    height: auto;
+    float: left;
+    margin: 2px;
+}
+
+.form-control-workout-h2 {
+
+}
+
+.form-control-workout-userid-label {
+    width: 100%;
+    float: left;
+}
+
+.form-control-workout-userid-input {
+    width: 100%;
+    float: left;
+}
+
+.form-control-workout-text-label {
+    width: 100%;
+    float: left;
+}
+
+.form-control-workout-text-input {
+    width: 100%;
+    height: 120px;
+    float: left;
+}
+
+.workout-button-submit {
+
+}
+
+

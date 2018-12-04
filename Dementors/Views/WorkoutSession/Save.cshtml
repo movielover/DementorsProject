@@ -1,0 +1,27 @@
+@model Dementors.Model.WorkoutSession
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<fieldset>
+    <form class="form-control-workout" asp-form="Save" asp-controlller="WorkoutSession">
+        <h2 class="form-control-workout-h2">Gem træning</h2>
+        <div asp-validation-summary="ModelOnly"></div>
+        <p>
+            <label asp-for="UserId" class="form-control-workout-userid-label">Bruger ID:</label>
+            <input asp-for="UserId" class="form-control-workout-userid-input"/>
+            
+            <label asp-for="TimeSpent" class="form-control-workout-text-label">Tid brugt:</label>
+            <input asp-for="TimeSpent" class="form-control-workout-text-input"/>
+            
+            <label asp-for="WorkoutType" class="form-control-workout-text-label">Træningstype:</label>
+            <input asp-for="WorkoutType" class="form-control-workout-text-input"/>
+            
+        </p>
+        <p>
+            <button class="workout-button-submit" type="submit">Send Feedback</button>
+        </p>
+    </form>
+</fieldset>

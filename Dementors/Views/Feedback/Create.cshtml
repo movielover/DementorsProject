@@ -3,25 +3,19 @@
     ViewBag.Title = "title";
     Layout = "_Layout";
 }
-<div id="wrapper-createform">
-    <fieldset>
-        <form class="form-control" asp-form="Create" asp-controlller="Feedback">
-         
-            <h2 class="form-control-feedback-h2">Feedback</h2>
-        
-            <div asp-validation-summary="ModelOnly"></div>
-         
-            <p>
-                <label asp-for="UserId" class="form-control-feedback-userid-label">Bruger ID:</label>
-                <input asp-for="UserId" class="form-control-feedback-userid-input"/>
-            
-                <label asp-for="Text" class="form-control-feedback-text-label">Feedback:</label>
-                <input asp-for="Text" class="form-control-feedback-text-input"/>
-                <span asp-validation-for="Text"></span>
-            </p>
-            <p>
-                <button class="feedback-button-submit" type="submit">Send Feedback</button>
-            </p>
-        </form>
-    </fieldset>
-</div>
+<fieldset>
+    <form class="form-control-feedback" asp-form="Create" asp-controlller="Feedback">
+        <h2 class="form-control-feedback-h2">Feedback</h2>
+        <div asp-validation-summary="ModelOnly"></div>
+        <p>
+            <label asp-for="UserId" class="form-control-feedback-userid-label">Bruger ID:</label>
+            <input asp-for="UserId" class="form-control-feedback-userid-input"/>
+            <label asp-for="Text" class="form-control-feedback-text-label">Feedback:</label>
+            <input asp-for="Text" class="form-control-feedback-text-input"/>
+            <span asp-validation-for="Text"></span>
+        </p>
+        <p>
+            <button class="feedback-button-submit" type="submit">Send Feedback</button>
+        </p>
+    </form>
+</fieldset>
