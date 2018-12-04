@@ -33,7 +33,6 @@ namespace Dementors.Controllers
             
 
             workoutSession.UserId = Bruger.Id;
-            workoutSession.TimeSpent = 500;
             workoutSession.WorkoutType = "DemensTræning";
             workoutSession.TimeDateForWorkout = DateTime.Now;
 
