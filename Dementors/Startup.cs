@@ -41,7 +41,7 @@ namespace Dementors
 			}
 			app.UseMvc(routes =>
 			{
-				routes.MapRoute("Default", "{controller=Home}/{action=index}/{id:int?}");
+				routes.MapRoute("Default", "{controller=Login}/{action=index}/{id:int?}");
 			});
 			app.UseFileServer();
 		}

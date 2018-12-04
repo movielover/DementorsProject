@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Dementors.Controllers
 {
+	[Route("Home")]
     public class HomeController : Controller
     {   
         
