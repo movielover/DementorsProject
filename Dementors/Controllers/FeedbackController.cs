@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Dementors.Controllers
 {
+	[Route("Feedback")]
     public class FeedbackController : Controller
     {
         private readonly DatabaseContext _db;
@@ -18,13 +19,12 @@ namespace Dementors.Controllers
             return View();
         }
         
-        [HttpGet]
+        [HttpGet("create")]
         public IActionResult Create()
         {
             return View();
-        }
-        
-        [HttpPost]
+        }   
+        [HttpPost()]
         public IActionResult Create(Feedback feedback)
         {
 
