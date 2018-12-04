@@ -1,5 +1,7 @@
 body{
-	background-image: url(../images/BlueOcean.jpg);
+	/*background-image: url(../images/BlueOcean.jpg);*/
+    margin: 0;
+    background-color: gray;
 }
 #mainHeader {
 	background: black;
@@ -51,7 +53,7 @@ body{
 }
 #siteNav li .login_{
 	margin-left: 600px;
-	background-color:#white
+	background-color: #FFF;
 	                 -moz-border-radius:28px;
 	-webkit-border-radius:28px;
 	border-radius:28px;
@@ -71,5 +73,44 @@ body{
 
 .navbar {
 	position: absolute;
+    top: 0;
 }
 
+#wrapper-createform{
+    margin: 30px auto 0;
+}
+
+.form-control{
+    width: 300px;
+    height: auto;
+    float: left;
+}
+
+.form-control-feedback-h2 {
+    
+}
+
+.form-control-feedback-userid-label {
+    width: 100%;
+    float: left;
+}
+
+.form-control-feedback-userid-input {
+    width: 100%;
+    float: left;
+}
+
+.form-control-feedback-text-label {
+    width: 100%;
+    float: left;
+}
+
+.form-control-feedback-text-input {
+    width: 100%;
+    height: 120px;
+    float: left;
+}
+
+.feedback-button-submit {
+    
+}

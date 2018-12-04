@@ -3,47 +3,25 @@
     ViewBag.Title = "title";
     Layout = "_Layout";
 }
-<style type="text/css">.form-control-feedback-userid-label {
-     
- }
-
- .form-control-feedback-userid-input {
-     
- }
-
- .form-control-feedback-text-label {
-     
- }
-
- .form-control-feedback-text-input {
-     
- }
-
- .form-control-feedback-h2 {
-     
- }
-
- .feedback-button-submit {
-     
- }
-</style>
-
-<fieldset>
-    <form class="form-control" asp-form="Create" asp-controlller="Feedback">
+<div id="wrapper-createform">
+    <fieldset>
+        <form class="form-control" asp-form="Create" asp-controlller="Feedback">
          
-        <h2 class="form-control-feedback-h2">Feedback</h2>
+            <h2 class="form-control-feedback-h2">Feedback</h2>
         
-        <div asp-validation-summary="ModelOnly"></div>
+            <div asp-validation-summary="ModelOnly"></div>
          
-        <p>
-            <label asp-for="UserId" class="form-control-feedback-userid-label"></label>
-            <input asp-for="UserId" class="form-control-feedback-userid-input"/>
-            <label asp-for="Text" class="form-control-feedback-text-label"></label>
-            <input asp-for="Text" class="form-control-feedback-text-input"/>
-            <span asp-validation-for="Text"></span>
-        </p>
-        <p>
-            <button class="feedback-button-submit" type="submit">Send Feedback</button>
-        </p>
-    </form>
-</fieldset>
+            <p>
+                <label asp-for="UserId" class="form-control-feedback-userid-label">Bruger ID:</label>
+                <input asp-for="UserId" class="form-control-feedback-userid-input"/>
+            
+                <label asp-for="Text" class="form-control-feedback-text-label">Feedback:</label>
+                <input asp-for="Text" class="form-control-feedback-text-input"/>
+                <span asp-validation-for="Text"></span>
+            </p>
+            <p>
+                <button class="feedback-button-submit" type="submit">Send Feedback</button>
+            </p>
+        </form>
+    </fieldset>
+</div>
