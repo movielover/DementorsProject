@@ -35,8 +35,8 @@ namespace Dementors.Controllers
             feedback.Id = 1;
             feedback.TimeDate = DateTime.Now;
 
-            //_db.Feedback.Add(feedback);
-            //_db.SaveChanges(); 
+            _db.Feedback.Add(feedback);
+            _db.SaveChanges(); 
             
             return View();
         }

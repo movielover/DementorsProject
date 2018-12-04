@@ -3,12 +3,36 @@
     ViewBag.Title = "title";
     Layout = "_Layout";
 }
+<style type="text/css">.form-control-feedback-userid-label {
+     
+ }
 
-<h2>title</h2>
+ .form-control-feedback-userid-input {
+     
+ }
+
+ .form-control-feedback-text-label {
+     
+ }
+
+ .form-control-feedback-text-input {
+     
+ }
+
+ .form-control-feedback-h2 {
+     
+ }
+
+ .feedback-button-submit {
+     
+ }
+</style>
 
 <fieldset>
-    <form asp-form="create" asp-controlller="Feedback">
+    <form class="form-control" asp-form="Create" asp-controlller="Feedback">
          
+        <h2 class="form-control-feedback-h2">Feedback</h2>
+        
         <div asp-validation-summary="ModelOnly"></div>
          
         <p>
