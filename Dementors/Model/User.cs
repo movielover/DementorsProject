@@ -7,10 +7,10 @@ namespace Dementors.Model
     {
         [Key]
         public int Id { get; set; }
-        public int UserId { get; set; }
         public string Name { get; set; }
-		public string Username { get; set; }
-	    public string Password { get; set; }
+		public string City { get; set; }
+		public int Zip { get; set; }
+		public int Phone { get; set; }
 
-    }
+	}
 }

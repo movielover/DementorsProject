@@ -9,6 +9,7 @@ namespace Dementors.Model
         public DbSet<Trainer> Trainer { get; set; }
         public DbSet<Bruger> User { get; set; }
         public DbSet<WorkoutSession> WorkoutSession { get; set; }
+		public DbSet<LoginInfos> loginInfos { get; set; }
 
 
         public DatabaseContext(DbContextOptions options) 

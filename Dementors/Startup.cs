@@ -1,10 +1,15 @@
 using Dementors.Model;
+using Owin;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Owin;
+using System.Web;
+using System.Web.Http;
 
+[assembly: OwinStartup(typeof(Dementors.Startup))]
 namespace Dementors
 {
 	public class Startup
@@ -44,6 +49,7 @@ namespace Dementors
 				routes.MapRoute("Default", "{controller=Login}/{action=index}/{id:int?}");
 			});
 			app.UseFileServer();
+
 		}
 	}
 }
