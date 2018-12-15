@@ -4,17 +4,16 @@
     Layout = "_Layout";
 }
 <div class="wrapperMyPage">
-	<div id="Information">
-		<h2>Information</h2>
+	<div id="information">
 		@foreach (var user_ in ViewBag.users)
 		{
-			<p>@user_.Name)</p>
-			<p>@user_.City)</p>
-			<p>@user_.Zip)</p>
-			<p>@user_.Phone)</p>
+			<p>@user_.Name</p>
+			<p>@user_.City</p>
+			<p>@user_.Zip</p>
+			<p>@user_.Phone</p>
 		}
 	</div>
-	<div class="Session">
+	<div class="session">
 		<h2>Session</h2>
 	</div>
 </div>
