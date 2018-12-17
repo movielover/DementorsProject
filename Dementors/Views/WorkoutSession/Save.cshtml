@@ -1,27 +1,40 @@
 @model Dementors.Model.WorkoutSession
-
 @{
     ViewBag.Title = "title";
     Layout = "_Layout";
 }
-
-<fieldset>
-    <form class="form-control-workout" asp-form="Save" asp-controlller="WorkoutSession">
-        <h2 class="form-control-workout-h2">Gem træning</h2>
-        <div asp-validation-summary="ModelOnly"></div>
+<fieldset class="form-control-workout">
+    <h2 class="form-control-workout-h2">Workout</h2>
+    @using (Html.BeginForm())
+    {
         <p>
-            <label asp-for="UserId" class="form-control-workout-userid-label">Bruger ID:</label>
-            <input asp-for="UserId" class="form-control-workout-userid-input"/>
-            
-            <label asp-for="TimeSpent" class="form-control-workout-text-label">Tid brugt:</label>
-            <input asp-for="TimeSpent" class="form-control-workout-text-input"/>
-            
-            <label asp-for="WorkoutType" class="form-control-workout-text-label">Træningstype:</label>
-            <input asp-for="WorkoutType" class="form-control-workout-text-input"/>
-            
+            <div class="form-control-workout-userid-label">
+                @Html.LabelFor(x => x.UserId)
+            </div>
+            <div class="form-control-feedback-userid-input">
+                @Html.EditorFor(x => x.UserId)
+            </div>
         </p>
         <p>
-            <button class="workout-button-submit" type="submit">Send Feedback</button>
+            <div class="form-control-workout-timespent-label">
+                @Html.LabelFor(x => x.TimeSpent)
+            </div>
+            <div class="form-control-workout-timespent-input">
+                @Html.TextAreaFor(x => x.TimeSpent)
+            </div>
         </p>
-    </form>
+        <p>
+            <div class="form-control-workout-workouttype-label">
+                @Html.LabelFor(x => x.WorkoutType)
+            </div>
+            <div class="form-control-workout-workouttype-input">
+                @Html.TextAreaFor(x => x.WorkoutType)
+            </div>
+        </p>
+        <p>
+            <div>
+                <button type="submit">Send Feedback</button>
+            </div>
+        </p>
+    }
 </fieldset>

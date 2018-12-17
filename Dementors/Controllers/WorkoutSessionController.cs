@@ -31,11 +31,7 @@ namespace Dementors.Controllers
             if (!ModelState.IsValid)
                 return View();
             
-
-            workoutSession.UserId = new Bruger().Id;
-            workoutSession.WorkoutType = "DemensTræning";
             workoutSession.TimeDateForWorkout = DateTime.Now;
-
 
             _db.WorkoutSession.Add(workoutSession);
             _db.SaveChanges(); 
