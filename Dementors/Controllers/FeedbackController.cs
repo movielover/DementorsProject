@@ -1,5 +1,6 @@
 ﻿using System;
 using Dementors.Model;
+using Dementors.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Dementors.Controllers
