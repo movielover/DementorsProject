@@ -5,11 +5,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Owin;
 using System.Web;
 using System.Web.Http;
 
-[assembly: OwinStartup(typeof(Dementors.Startup))]
 namespace Dementors
 {
 	public class Startup
