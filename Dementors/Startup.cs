@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using System.Web;
 using System.Web.Http;
+using Dementors.Entities;
 
 namespace Dementors
 {
