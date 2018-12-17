@@ -3,19 +3,31 @@
     ViewBag.Title = "title";
     Layout = "_Layout";
 }
-<fieldset>
-    <form class="form-control-feedback" asp-form="Create" asp-controlller="Feedback">
-        <h2 class="form-control-feedback-h2">Feedback</h2>
-        <div asp-validation-summary="ModelOnly"></div>
+<fieldset class="form-control-feedback">
+    <h2 class="form-control-feedback-h2">Feedback</h2>
+    @using (Html.BeginForm())
+    {
         <p>
-            <label asp-for="UserId" class="form-control-feedback-userid-label">Bruger ID:</label>
-            <input asp-for="UserId" class="form-control-feedback-userid-input"/>
-            <label asp-for="Text" class="form-control-feedback-text-label">Feedback:</label>
-            <input asp-for="Text" class="form-control-feedback-text-input"/>
-            <span asp-validation-for="Text"></span>
+            <div class="form-control-feedback-userid-label">
+                @Html.LabelFor(x => x.UserId)
+            </div>
+            <div class="form-control-feedback-userid-input">
+                @Html.EditorFor(x => x.UserId)
+            </div>
         </p>
         <p>
-            <button class="feedback-button-submit" type="submit">Send Feedback</button>
+            <div class="form-control-feedback-text-label">
+                @Html.LabelFor(x => x.Text)
+            </div>
+            <div class="form-control-feedback-text-input">
+                @Html.TextAreaFor(x => x.Text)
+            </div>
         </p>
-    </form>
+        <p>
+            <div class="feedback-button-submit">
+                <button type="submit">Send Feedback</button>
+            </div>
+
+        </p>
+    }
 </fieldset>

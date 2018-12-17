@@ -1,6 +1,6 @@
 {
   "Connectionstrings": {
-    "DatabaseContext": "Server=den1.mssql2.gear.host;Database=dementor;User Id= dementor; Password=Jr5ZlkG-8ti-"
+    "DatabaseContext": "Server=den1.mssql2.gear.host; Database=dementor; User Id=dementor; Password=Jr5ZlkG-8ti-"
   },
   "FeatureToggles": {
     "EnableDeveloperExceptions": true
