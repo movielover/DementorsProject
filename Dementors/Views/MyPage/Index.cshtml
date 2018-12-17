@@ -3,17 +3,33 @@
     ViewBag.Title = "title";
     Layout = "_Layout";
 }
+<script>
+	function void SaveButton(object sender, eventArgs e)
+</script>
 <div class="wrapperMyPage">
 	<div id="information">
-		@foreach (var user_ in ViewBag.users)
-		{
-			<p>@user_.Name</p>
-			<p>@user_.City</p>
-			<p>@user_.Zip</p>
-			<p>@user_.Phone</p>
-		}
-	</div>
-	<div class="session">
-		<h2>Session</h2>
-	</div>
+		<h2>Information</h2>
+			@foreach (var user_ in ViewBag.users)
+			{
+				<form action="/mypage/users">
+					<p>
+						<label for="Name">Name</label>
+						<input class="edit" type="text" value="@user_.Name" />
+					</p>
+					<p>
+						<label for="City">City</label>
+						<input class="edit" type="text" value="@user_.City" />
+					</p>
+					<p>
+						<label for="Zip">Zip</label>
+						<input class="edit" type="text" value="@user_.Zip" />
+					</p>
+					<p>
+						<label for="Phone">Phone</label>
+						<input class="edit" type="text" value="@user_.Phone" />
+					</p>
+					<input class="gem" type="submit" value="Gem" onsubmit="SaveButton"/>
+				</form>
+			}
+</div>
 </div>
