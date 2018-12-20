@@ -1,6 +1,7 @@
 using System;
 using Dementors.Model;
 using Microsoft.AspNetCore.Mvc;
+using Dementors.Entities;
 
 namespace Dementors.Controllers
 {

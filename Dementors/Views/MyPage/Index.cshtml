@@ -1,35 +1,35 @@
+@using System.Collections
 @Model object
 @{
-    ViewBag.Title = "title";
+    ViewBag.Title = "MyPage";
     Layout = "_Layout";
 }
-<script>
-	function void SaveButton(object sender, eventArgs e)
-</script>
 <div class="wrapperMyPage">
 	<div id="information">
 		<h2>Information</h2>
-			@foreach (var user_ in ViewBag.users)
+		@{
+			foreach (var user in ViewBag.users)
 			{
-				<form action="/mypage/users">
+				<form action="/MyPage/users">
 					<p>
 						<label for="Name">Name</label>
-						<input class="edit" type="text" value="@user_.Name" />
+						<input class="edit" type="text" value="@user.Name" />
 					</p>
 					<p>
 						<label for="City">City</label>
-						<input class="edit" type="text" value="@user_.City" />
+						<input class="edit" type="text" value="@user.City" />
 					</p>
 					<p>
 						<label for="Zip">Zip</label>
-						<input class="edit" type="text" value="@user_.Zip" />
+						<input class="edit" type="text" value="@user.Zip" />
 					</p>
 					<p>
 						<label for="Phone">Phone</label>
-						<input class="edit" type="text" value="@user_.Phone" />
+						<input class="edit" type="text" value="@user.Phone" />
 					</p>
-					<input class="gem" type="submit" value="Gem" onsubmit="SaveButton"/>
+					<input class="gem" type="submit" value="Gem" onsubmit="SaveButton" />
 				</form>
 			}
-</div>
+		}
+	</div>
 </div>
